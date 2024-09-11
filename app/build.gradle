@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material
@@ -42,4 +42,5 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
+    implementation(name: 'FragNav-3.3.0-sources', ext: 'jar')
 }
